@@ -1,12 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mi Portafolio</title>
+  <!-- Boostrap styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Main styles -->
+  <link rel="stylesheet" href="./assets/js/scripts.js">
+  <!-- Typeform script -->
+  <script>
+    (function () {
+      var qs, js, q, s, d = document,
+        gi = d.getElementById,
+        ce = d.createElement,
+        gt = d.getElementsByTagName,
+        id = "typef_orm",
+        b = "https://embed.typeform.com/";
+      if (!gi.call(d, id)) {
+        js = ce.call(d, "script");
+        js.id = id;
+        js.src = b + "embed.js";
+        q = gt.call(d, "script")[0];
+        q.parentNode.insertBefore(js, q)
+      }
+    })()
+  </script>
 </head>
+
 <body>
-  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">G</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#about-me">Sobre Mí</a>
+        <a class="nav-item nav-link" href="#experience">Experiencia</a>
+        <a class="nav-item nav-link" href="#last-jobs">Últimos trabajos</a>
+        <a class="nav-item nav-link" href="#contact">Contáctame</a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="hero">
+      <div class="hero__main">
+        <h1 class="hero__main-title">
+          <span>Lorem</span>
+          Ipsum Valorem
+        </h1>
+      </div>
+    </section>
+    <section id="about-me" class="about">
+      <div class="about__summary">
+        <h4 class="about__summary-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempore
+          minima adipisci quam tempora esse ullam cum reiciendis eveniet asperiores architecto, hic laboriosam earum, id
+          non? Accusantium sapiente repudiandae cumque.</h4>
+        <hr class="hr_small">
+        <div class="summary_container row">
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illo earum, nesciunt nisi laborum
+              laudantium tenetur deserunt! Velit rem eos perferendis dolorum iure laboriosam ducimus illum, omnis hic
+              nostrum placeat?</p>
+          </div>
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi possimus, delectus labore porro distinctio
+              sit nisi voluptatum. Facere, sunt. Rem nemo amet, id dicta aliquid tempore magnam veniam fugit libero.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="experience">
+      <h3>Mi Experiencia</h3>
+      <hr class="hr_small">
+      <div class="experience__container row">
+        <div class="experience__item col-md-4">
+          <img src="#" alt="">
+          <h4 class="experience__item-title">Lorem</h4>
+          <small class="experience__item-subtitle">1990 - 2020</small>
+          <p class="experience__item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti sequi delectus, quibusdam neque placeat
+            vero, saepe non velit aperiam eveniet vel distinctio! Ab doloremque quasi saepe nihil, facere laudantium.
+          </p>
+        </div>
+        <div class="experience__item col-md-4">
+          <img src="#" alt="">
+          <h4 class="experience__item-title">Lorem</h4>
+          <small class="experience__item-subtitle">1990 - 2020</small>
+          <p class="experience__item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti sequi delectus, quibusdam neque placeat
+            vero, saepe non velit aperiam eveniet vel distinctio! Ab doloremque quasi saepe nihil, facere laudantium.
+          </p>
+        </div>
+        <div class="experience__item col-md-4">
+          <img src="#" alt="">
+          <h4 class="experience__item-title">Lorem</h4>
+          <small class="experience__item-subtitle">1990 - 2020</small>
+          <p class="experience__item-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti sequi delectus, quibusdam neque placeat
+            vero, saepe non velit aperiam eveniet vel distinctio! Ab doloremque quasi saepe nihil, facere laudantium.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="last-jobs" class="last-jobs">
+      <h3>Mi Experiencia</h3>
+      <hr class="hr_small">
+      <div class="last-jobs__container">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="typeform-widget" data-url="https://gonzalosalinas.typeform.com/to/xvzPKs" data-transparency="100"
+        style="width: 100%; height: 500px;"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav class="footer__social-nav">
+      <i class="fab fa-github"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-codepen"></i>
+    </nav>
+  </footer>
+  <!-- JS dependencies to Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <!-- Font Awesome dependency-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"></script>
+  <!-- Main script -->
+  <script src="./assets/js/scripts.js"></script>
 </body>
+
 </html>
