@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mi Portafolio</title>
+  <!-- Google Fonts | Montserrat 300,400,700 -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
   <!-- Boostrap styles -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Main styles -->
-  <link rel="stylesheet" href="./assets/js/scripts.js">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <!-- Typeform script -->
   <script>
     (function () {
@@ -32,7 +34,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="/">G</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,18 +53,18 @@
     <section class="hero">
       <div class="hero__main">
         <h1 class="hero__main-title">
-          <span>Lorem</span>
-          Ipsum Valorem
+          <span>Developer</span>
+          Front End
         </h1>
       </div>
     </section>
-    <section id="about-me" class="about">
+    <section id="about-me" class="about d-none d-sm-block">
       <div class="about__summary">
         <h4 class="about__summary-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempore
           minima adipisci quam tempora esse ullam cum reiciendis eveniet asperiores architecto, hic laboriosam earum, id
           non? Accusantium sapiente repudiandae cumque.</h4>
         <hr class="hr_small">
-        <div class="summary_container row">
+        <div class="about__summary_container row">
           <div class="col-md-6">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illo earum, nesciunt nisi laborum
               laudantium tenetur deserunt! Velit rem eos perferendis dolorum iure laboriosam ducimus illum, omnis hic
@@ -75,6 +77,7 @@
         </div>
       </div>
     </section>
+    <div class="separator_100-left separator_left d-none d-sm-block"></div>
     <section id="experience" class="experience">
       <h3>Mi Experiencia</h3>
       <hr class="hr_small">
@@ -109,42 +112,43 @@
       </div>
     </section>
     <section id="last-jobs" class="last-jobs">
-      <h3>Mi Experiencia</h3>
+      <h3>Últimos Trabajos</h3>
       <hr class="hr_small">
       <div class="last-jobs__container">
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card" style="width: 24rem;">
+          <img src="https://www.gonsales.me/images/portfolio-publica.c8fd841321947a336c96ca368c76220f.png" class="card-img-top" alt="Web pública">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Web Pública</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card" style="width: 24rem;">
+          <img src="https://www.gonsales.me/images/portfolio-digital.d2d4428ba107fa795871efef6b2432d7.png" class="card-img-top" alt="App de inversiones">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">App Digital</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card" style="width: 24rem;">
+          <img src="https://www.gonsales.me/images/portfolio-latam-focus.8315bc31b4ac811c76339ce4412e6ac8.png" class="card-img-top" alt="CTA para eventos">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">LATAM Focus</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
     </section>
     <section id="contact" class="contact">
+      <div class="separator_100-right separator_right d-none d-sm-block"></div>
+      <h3>Contáctame</h3>
+      <hr class="hr_small">
       <div class="typeform-widget" data-url="https://gonzalosalinas.typeform.com/to/xvzPKs" data-transparency="100"
         style="width: 100%; height: 500px;"></div>
     </section>
+    <section style="display: none;"></section>
   </main>
   <footer class="footer">
     <nav class="footer__social-nav">
