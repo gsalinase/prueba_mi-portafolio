@@ -1,0 +1,189 @@
+:root {
+  --montserrat: 'Montserrat', sans-serif;
+}
+
+/* Reset CSS - Normalize */
+@import './vendors/normalize.css';
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Base */
+body {
+  font-family: var(--montserrat);
+}
+
+p {
+  line-height: 25.888px;
+}
+
+/* Components */
+.hr_small {
+  width: 125px;
+}
+
+.separator_100-left {
+  height: 50px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#b1b1b1), to(#dedede));
+  background-image: linear-gradient(90deg, #b1b1b1, #dedede);
+}
+
+.separator_100-right {
+  height: 50px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#dedede), to(#b1b1b1));
+  background-image: linear-gradient(90deg, #dedede, #b1b1b1);
+}
+
+.separator_left {
+  position: absolute;
+  left: 0;
+  width: 30vw;
+}
+
+.separator_right {
+  position: absolute;
+  right: 0;
+  width: 30vw;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #f25757;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/* Hero */
+.hero {
+  background: url('https://www.gonsales.me/images/hero@2x.43417d60cdcb8f6ac95186e7670e0a0d.png');
+  height: 741px;
+  margin-top: -2px;
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__main {
+  width: 300px;
+  padding-top: 13rem;
+  padding-right: 4rem;
+  color: white;
+}
+
+.hero__main span {
+  display: block;
+  font-size: 1.50rem;
+  text-align: right;
+  font-weight: 300;
+  line-height: 0;
+}
+
+.hero__main-title {
+  text-align: right;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__main {
+    padding-top: 10rem;
+    padding-left: 3rem;
+    width: 416px;
+  }
+
+  .hero__main span {
+    font-size: 1.75rem;
+  }
+
+  .hero__main-title {
+    font-size: 8rem;
+    line-height: 130px;
+  }
+}
+
+/* About */
+.about {
+  padding: 0 4rem;
+  text-align: center;
+}
+
+.about__summary-title {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+  line-height: 38.832px;
+}
+
+.about__summary_container {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+/* Experience */
+.experience {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.experience h3,
+.experience h4 {
+  font-weight: 700;
+}
+
+.experience__container {
+  padding: 4rem;
+}
+
+/* Last Jobs */
+.last-jobs {
+  text-align: center;
+}
+
+.last-jobs h3 {
+  font-weight: 700;
+}
+
+.last-jobs__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+}
+
+.last-jobs__container .card:nth-child(1),
+.last-jobs__container .card:nth-child(2) {
+  margin-right: 3rem;
+}
+
+/* Footer */
+.footer {
+  padding: 5rem 4rem;
+  text-align: center;
+  background-color: #000;
+}
+
+.footer__social-nav {
+  color: white;
+}
+
+.svg-inline--fa.fa-w-14,
+.svg-inline--fa.fa-w-16 {
+  width: 5em;
+  height: 3em;
+}
