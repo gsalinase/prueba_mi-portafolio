@@ -17,6 +17,7 @@ body {
 
 p {
   line-height: 25.888px;
+  font-weight: 400;
 }
 
 /* Components */
@@ -46,6 +47,17 @@ p {
   position: absolute;
   right: 0;
   width: 30vw;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  background-color: #f25757;
 }
 
 .card-title {
@@ -148,7 +160,13 @@ p {
 }
 
 .experience__container {
-  padding: 4rem;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {  
+  .experience__container {
+    padding: 4rem;
+  }
 }
 
 /* Last Jobs */
@@ -161,14 +179,53 @@ p {
 }
 
 .last-jobs__container {
-  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding: 4rem;
 }
 
 .last-jobs__container .card:nth-child(1),
 .last-jobs__container .card:nth-child(2) {
-  margin-right: 3rem;
+  margin-right: 0rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  width: 100% !important;
+}
+
+@media screen and (min-width: 992px) {
+  .last-jobs__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .last-jobs__container .card:nth-child(1),
+  .last-jobs__container .card:nth-child(2) {
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
+
+  .card {
+    width: 24rem !important;
+  }
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  padding: 6rem;
+}
+
+.contact h3 {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {  
+  .contact {
+    padding: 6rem;
+  }
 }
 
 /* Footer */
