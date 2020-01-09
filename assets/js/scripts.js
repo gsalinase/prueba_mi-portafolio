@@ -1,9 +1,6 @@
 $(document).ready(function () {
   $('.carousel').carousel({
     interval: 10000
-<<<<<<< HEAD
-  }) 
-=======
   })
 
   $("a").on('click', function(event) {
@@ -21,5 +18,4 @@ $(document).ready(function () {
       });
     };
   });
->>>>>>> master
 });
