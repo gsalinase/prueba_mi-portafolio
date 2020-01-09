@@ -25,6 +25,10 @@ p {
   width: 125px;
 }
 
+.fake__class {
+  font-family: 'Gelasio', serif;
+}
+
 .separator_100-left {
   height: 50px;
   background-image: -webkit-gradient(linear, left top, right top, from(#b1b1b1), to(#dedede));
